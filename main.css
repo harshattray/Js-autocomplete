@@ -2,7 +2,7 @@
  * @Author: harsha
  * @Date:   2018-04-26T10:40:59+05:30
  * @Last modified by:   harsha
- * @Last modified time: 2018-04-26T12:34:25+05:30
+ * @Last modified time: 2018-04-26T16:28:47+05:30
  */
 
 
@@ -14,6 +14,11 @@ body {
 
 * {
   box-sizing: border-box;
+}
+.App-sub {
+  font-size: 20px;
+  margin-top: 50px;
+  font-weight: 300;
 }
 
 .main-container {

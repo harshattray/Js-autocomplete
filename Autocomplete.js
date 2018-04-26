@@ -2,7 +2,7 @@
 * @Author: harsha
 * @Date:   2018-04-26T10:40:59+05:30
  * @Last modified by:   harsha
- * @Last modified time: 2018-04-26T12:27:17+05:30
+ * @Last modified time: 2018-04-26T16:32:35+05:30
 */
 import FuzzySearch from 'fuzzy-search';
 
@@ -19,25 +19,20 @@ export default class Autocomplete {
   onQueryChange(query, self) {
     // Get data for the dropdown
     let {url, data, numOfResults} = self.options;
-    console.log(data);
     let results = self.getResults(query, data);
     results = results.slice(0, numOfResults);
     self.updateDropdown(results);
   }
 
   /**
-  * Given an array and a query, return a filtered array based on the query.
+  * Given an array and a query Fuzzy-search implementation
   */
   getResults(query, data) {
-    console.log(data);
     if (!query) return [];
     const searcher = new FuzzySearch(data, ['name'], {
       caseSensitive: false
     });
-    console.log(searcher);
     const results = searcher.search(query);
-    console.log(results);
-
     return results;
   }
 
