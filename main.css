@@ -1,0 +1,93 @@
+/**
+ * @Author: harsha
+ * @Date:   2018-04-26T10:40:59+05:30
+ * @Last modified by:   harsha
+ * @Last modified time: 2018-04-26T12:34:25+05:30
+ */
+
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin: auto;
+}
+.header-wrap {
+  width: 100%;
+  overflow: hidden;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  display: block;
+}
+.header-wrap h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  font-weight: 300;
+}
+.form-wrap {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+.form-group {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.results {
+  border: 1px solid #CCC;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+  border-radius: 4px;
+}
+
+.result {
+  padding: 10px;
+  cursor: pointer;
+  background: #fff;
+}
+.result:nth-child(2n) {
+  background: #f4f4f4;
+}
+.result:hover {
+  background-color: #DDD;
+}
+
+.item__selected {
+  background-color: #DDD;
+}
+
+form {
+  display: flex;
+}
+
+.form-group + .form-group {
+  margin-left: 50px;
+}
+
+input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    outline: 0px;
+    box-shadow: none;
+}
